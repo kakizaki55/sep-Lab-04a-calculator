@@ -7,12 +7,29 @@ const calButton = document.getElementById('calculate');
 const answer = document.getElementById('answer');
 const mathSymble = document.getElementById('math-fucntion');
 
+const num1Button = document.getElementById('num1');
+const num2Button = document.getElementById('num2');
+const num3Button = document.getElementById('num3');
+const num4Button = document.getElementById('num4');
+const num5Button = document.getElementById('num5');
+const num6Button = document.getElementById('num6');
+const num7Button = document.getElementById('num7');
+const num8Button = document.getElementById('num8');
+const num9Button = document.getElementById('num9');
 
-console.log(input1, input2, answer);
+num1Button.addEventListener('click', () =>{
+    input1.value = num1Button.value;
+}); 
+num2Button.addEventListener('click', () =>{
+    input1.value = num2Button.value;
+}); 
 
-console.log(add());
 
-console.log(mathSymble.value);
+// console.log(input1, input2, answer);
+
+// console.log(add());
+
+// console.log(mathSymble.value);
 
  
 
@@ -22,13 +39,13 @@ calButton.addEventListener('click', () => {
     const value1 = Number(input1.value);
     const value2 = Number(input2.value);
     
-    console.log(mathSymble.value);
+    // console.log(mathSymble.value);
     
     
     if (mathSymble.value === 'add'){
       
         const results = add(value1, value2);
-        console.log(results);
+        // console.log(results);
         answer.textContent = results;
 
     } else if (mathSymble.value === 'sub') {
@@ -36,10 +53,15 @@ calButton.addEventListener('click', () => {
         const results = sub(value1, value2);
         answer.textContent = results;
 
-    }else if (mathSymble.value === 'mult'){
+    } else if (mathSymble.value === 'mult'){
 
-        const results = sub(value1, value2);
+        const results = mult(value1, value2);
         answer.textContent = results;
+    } else if (mathSymble.value === 'div'){
+
+        const results = divison(value1, value2);
+        answer.textContent = results; 
     }
-  });
+
+});
   

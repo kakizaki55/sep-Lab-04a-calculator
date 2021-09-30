@@ -62,7 +62,18 @@ body{
 
 #answer{
     margin:2rem;
+    border: black 2px solid;
+    padding: 10px;
+    background-color: blanchedalmond;
 }
-
+#number-pad{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:10px;
+}
+.number-button{
+    margin: 10px;
+}
 
   
