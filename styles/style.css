@@ -20,7 +20,12 @@ footer {
     box-shadow: var(--shadow);
     
 }
-
+.input{
+    border-color: cadetblue;
+    border: 3px solid ;
+    border-radius: 10px;
+    
+}
 
 
 
@@ -65,6 +70,8 @@ body{
     border: black 2px solid;
     padding: 10px;
     background-color: blanchedalmond;
+    border-radius: 10px;
+    
 }
 #number-pad{
     display: flex;
@@ -74,6 +81,12 @@ body{
 }
 .number-button{
     margin: 10px;
+    border: black solid 2px;
 }
-
+#calculate{
+    margin: 10px;
+    color: rgb(22, 186, 192);
+    border: rgb(14, 58, 59) solid 3px;
+    border-radius: 10px;
+}
   

@@ -1,5 +1,5 @@
 
-import { add, sub, mult, divison } from './calculation.js';
+import { add, sub, mult, divison, modulo, pythagorean} from './calculation.js';
 
 const input1 = document.getElementById('number-1');
 const input2 = document.getElementById('number-2');
@@ -16,14 +16,18 @@ const num6Button = document.getElementById('num6');
 const num7Button = document.getElementById('num7');
 const num8Button = document.getElementById('num8');
 const num9Button = document.getElementById('num9');
+const number = 0;
+
 
 num1Button.addEventListener('click', () =>{
-    input1.value = num1Button.value;
+    input1.value = num1Button.textContent;
+
 }); 
 num2Button.addEventListener('click', () =>{
-    input1.value = num2Button.value;
+    input1.value = num2Button.textContent;
 }); 
 
+input1.value = number;
 
 // console.log(input1, input2, answer);
 
@@ -61,7 +65,12 @@ calButton.addEventListener('click', () => {
 
         const results = divison(value1, value2);
         answer.textContent = results; 
-    }
+    } else if (mathSymble.value === 'modulo'){
 
-});
-  
+        const results = modulo(value1, value2);
+        answer.textContent = results; 
+    } else if (mathSymble.value === 'pythagorean'){
+
+        const results = pythagorean(value1, value2);
+        answer.textContent = results; 
+    }});
