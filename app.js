@@ -1,5 +1,5 @@
 
-import { add, sub, mult, divison, modulo, pythagorean} from './calculation.js';
+import { add, sub, mult, divison, modulo, pythagorean } from './calculation.js';
 
 const input1 = document.getElementById('number-1');
 const input2 = document.getElementById('number-2');
@@ -7,27 +7,27 @@ const calButton = document.getElementById('calculate');
 const answer = document.getElementById('answer');
 const mathSymble = document.getElementById('math-fucntion');
 
-const num1Button = document.getElementById('num1');
-const num2Button = document.getElementById('num2');
-const num3Button = document.getElementById('num3');
-const num4Button = document.getElementById('num4');
-const num5Button = document.getElementById('num5');
-const num6Button = document.getElementById('num6');
-const num7Button = document.getElementById('num7');
-const num8Button = document.getElementById('num8');
-const num9Button = document.getElementById('num9');
-const number = 0;
+// const num1Button = document.getElementById('num1');
+// const num2Button = document.getElementById('num2');
+// const num3Button = document.getElementById('num3');
+// const num4Button = document.getElementById('num4');
+// const num5Button = document.getElementById('num5');
+// const num6Button = document.getElementById('num6');
+// const num7Button = document.getElementById('num7');
+// const num8Button = document.getElementById('num8');
+// const num9Button = document.getElementById('num9');
+// const number = 0;
 
 
-num1Button.addEventListener('click', () =>{
-    input1.value = num1Button.textContent;
+// num1Button.addEventListener('click', () =>{
+//     input1.value = num1Button.textContent;
 
-}); 
-num2Button.addEventListener('click', () =>{
-    input1.value = num2Button.textContent;
-}); 
+// }); 
+// num2Button.addEventListener('click', () =>{
+//     input1.value = num2Button.textContent;
+// }); 
 
-input1.value = number;
+// input1.value = number;
 
 // console.log(input1, input2, answer);
 
